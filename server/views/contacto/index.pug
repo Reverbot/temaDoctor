@@ -1,3 +1,10 @@
 extends ../layout/index
 block contenido
-    h1 Contacto
+    h1.contacto1 Contacto
+    form.formulario.container(action="")
+        input.nombre(type="text" id="nombre" placeholder="Nombre")
+        input.email(type="email" id="email" placeholder="Correo")
+        input.cel(type="text" id="numero" placeholder="Telefono")
+        textarea.texto(placeholder='Mensaje...')
+           
+        input.enviar(type="submit" value="Enviar")

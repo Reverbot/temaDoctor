@@ -35,23 +35,24 @@ p{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
+@media(max-width: 920px){
+    .numero{
+        font-size: 2.5rem;
+    }
+}
 @media(max-width: 768px){
     .banner .container{
         width: 90%;
         grid-template-columns: repeat(2, 1fr);
     }
     .numero{
-        font-size: 2.5rem !important;
+        font-size: 1.6rem !important;
     }
     .contacto{
         font-size: 1.3rem !important;
     }
 }
-@media(max-width: 920px){
-    .numero{
-        font-size: 2.5rem !important;
-    }
-}
+
 .header{
     width: 75%;
 }
@@ -483,5 +484,107 @@ footer{
     color: #868585;
     font-size: .6em;
     line-height: 25px;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items:  center;
+    text-align: center;
+    grid-gap: 20px;
+}
+@media screen and (max-width: 768px){   
+    .servicios{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+.contc{
+    border: 1px solid black;
+    margin-top: -7px;
+    padding: 20px 0;
+}
+.img {
+    overflow: hidden;
+}
+.serv img{
+    max-width: 100%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.serv img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+.serv h4{
+    font-size: .9em;
+    font-weight: 100;
+    font-family: var(--fuenteSecundaria);
+    margin: 0;
+    padding-bottom: 10px;
+}
+.serv p{
+    font-size: .7em;
+    color: #868686;
+    line-height: 1.6em;
+    font-weight: 100;
+    padding: 0 10px;
+}
+.resumen{
+    font-size: 2em;
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    color: #448885;
+    font-weight: 100;
+    padding: 20px 0;
+}
+
+.formulario input{
+    border: none;
+    color: #868585;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #868585;
+    padding: 10px 5px;
+    font-size: .7em;
+}
+.nombre{
+    width: 100%;
+    outline: none;
+}
+.email, .cel{
+    width: 45%;
+}
+.email{
+    margin-right: 112px;
+}
+.texto{
+    width: 100%;
+    height: 13em;
+    outline: none;
+    font-size: .7em;
+    color: #868585;
+    resize: none;
+    border: 1px solid #868585;
+    padding: 10px 5px;
+}
+.enviar{
+    background: #f63030;
+    border: 1px solid #f63030 !important;
+    padding: 8px 0;
+    width: 13%;
+    outline: none;
+    margin: 2em auto 0;
+    font-size: 1em;
+    font-weight: 100;
+    color: #fff !important;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+}
+.contacto1{
+    color: #448885;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
 }
   
